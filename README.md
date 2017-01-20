@@ -29,10 +29,11 @@ classification.exe deploy.prototxt network.caffemodel mean.binaryproto label1.tx
 ```
 The source Image:
 
+![](http://img.blog.csdn.net/20170120172753355?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTXJfQ3Vycnk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
 The result:
+
+![](http://img.blog.csdn.net/20170120172805042?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTXJfQ3Vycnk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 # DataSet
 You can try ZnCar.zip. It includes 3 vehicle types and 2 vehicle surfaces.  60 train imgs and 12 test imgs.
-
-
-
