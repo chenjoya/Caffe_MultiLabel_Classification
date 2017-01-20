@@ -39,3 +39,5 @@ The result:
 You can try ZnCar.zip. It includes 3 vehicle types and 2 vehicle surfaces.  60 train imgs and 12 test imgs.
 
 ### Note that this project only support 2 classes classification. 
+The network structure:
+![](http://img.blog.csdn.net/20170120103953309?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvTXJfQ3Vycnk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
