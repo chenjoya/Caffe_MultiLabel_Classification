@@ -37,6 +37,7 @@ The result:
 
 # DataSet
 You can try ZnCar.zip. It includes 3 vehicle types and 2 vehicle surfaces.  60 train imgs and 12 test imgs.
+http://download.csdn.net/detail/mr_curry/9742578 
 
 ### Note that this project only support 2 classes classification. 
 The network structure:
