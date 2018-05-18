@@ -64,8 +64,8 @@ layer {
   name: "slice"
   type: "Slice"
   bottom: "labels"
-  top: "type" #汽车品牌
-  top: "surface" #车的外形
+  top: "type" #脝没鲁碌脝路脜脝
+  top: "surface" #鲁碌碌脛脥芒脨脦
   slice_param {
     axis: 1
     slice_point: 1
@@ -375,10 +375,10 @@ layer {
   }
 }
 layer {
-  name: "fc8_type"
+  name: "fc8_1_type"
   type: "InnerProduct"
   bottom: "fc7"
-  top: "fc8_type"
+  top: "fc8_1_type"
   param {
     lr_mult: 5
     decay_mult: 5
@@ -400,10 +400,10 @@ layer {
   }
 }
 layer {
-  name: "fc8_surface"
+  name: "fc8_2_surface"
   type: "InnerProduct"
   bottom: "fc7"
-  top: "fc8_surface"
+  top: "fc8_2_surface"
   param {
     lr_mult: 5
     decay_mult: 5
@@ -425,38 +425,38 @@ layer {
   }
 }
 layer {
-  name: "accuracy_type"
+  name: "accuracy_1_type"
   type: "Accuracy"
-  bottom: "fc8_type"
+  bottom: "fc8_1_type"
   bottom: "type"
-  top: "accuracy_type"
+  top: "accuracy_1_type"
   include {
     phase: TEST
   }
 }
 layer {
-  name: "loss_type"
+  name: "loss_1_type"
   type: "SoftmaxWithLoss"
-  bottom: "fc8_type"
+  bottom: "fc8_1_type"
   bottom: "type"
-  top: "loss_type"
+  top: "loss_1_type"
   loss_weight:0.5
 }
 layer {
-  name: "accuracy_surface"
+  name: "accuracy_2_surface"
   type: "Accuracy"
-  bottom: "fc8_surface"
+  bottom: "fc8_2_surface"
   bottom: "surface"
-  top: "accuracy_surface"
+  top: "accuracy_2_surface"
   include {
     phase: TEST
   }
 }
 layer {
-  name: "loss_surface"
+  name: "loss_2_surface"
   type: "SoftmaxWithLoss"
-  bottom: "fc8_surface"
+  bottom: "fc8_2_surface"
   bottom: "surface"
-  top: "loss_surface"
+  top: "loss_2_surface"
   loss_weight:0.5
 }
