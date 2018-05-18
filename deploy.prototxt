@@ -309,10 +309,10 @@ layer {
   }
 }
 layer {
-  name: "fc8_type"
+  name: "fc8_1_type"
   type: "InnerProduct"
   bottom: "fc7"
-  top: "fc8_type"
+  top: "fc8_1_type"
   param {
     lr_mult: 5
     decay_mult: 5
@@ -334,10 +334,10 @@ layer {
   }
 }
 layer {
-  name: "fc8_surface"
+  name: "fc8_2_surface"
   type: "InnerProduct"
   bottom: "fc7"
-  top: "fc8_surface"
+  top: "fc8_2_surface"
   param {
     lr_mult: 5
     decay_mult: 5
@@ -359,16 +359,16 @@ layer {
   }
 }
 layer {
-  name: "prob_type"
+  name: "prob_1_type"
   type: "Softmax"
-  bottom: "fc8_type"
-  top: "prob_type"
+  bottom: "fc8_1_type"
+  top: "prob_1_type"
   loss_weight:0.5
 }
 layer {
-  name: "prob_surface"
+  name: "prob_2_surface"
   type: "Softmax"
-  bottom: "fc8_surface"
-  top: "prob_surface"
+  bottom: "fc8_2_surface"
+  top: "prob_2_surface"
   loss_weight:0.5
 }
